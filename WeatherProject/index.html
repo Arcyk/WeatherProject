@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+  <div id="container">
+    <header id="nagłówek">
+      <article id="left">
+        <input type="text" id="city" placeholder="podaj miasto">
+        <section id="forecast">
+          <h1>POGODA <span id="here"></span></h1>
+        </section>
+      </article>
+      <article id="right"></article>
+      <article id="hours"></article>
+    </header>
+
+    <main id="table">
+      <article id="first">
+     <section><img title="temperatura" src="images/tempicon.png" alt="termometr" width="150px" height="150px"></section>
+     <section id="temp"></section>
+    </article>
+    <article id="second">
+      <section><img title="ciśnienie" src="images/pressure.png" alt="termometr" width="100px" height="100px"></section>
+      <section id="pressure"></section>
+    </article>
+    <article id="third">
+      <section><img title='wilgotność'src="images/humidity.png" alt="termometr" width="120px" height="120px"></section>
+      <section id="humidity"></section>
+    </article>
+    <article id="fourth">
+      <section><img title="zachmurzenie"src="images/clouds.png" alt="termometr" width="120px" height="120px"></section>
+      <section id="clouds"></section>
+    </article>
+    <article id="fifth">
+      <section><img title="wiatr" src="images/wind.png" alt="termometr" width="120px" height="120px"></section>
+      <section id="wind"></section>
+    </article>
+    </main>
+    <section id="prognoza"><h1>PROGNOZA NA 5 DNI</h1></section>
+    <footer id='table'>
+        <article id="third">
+            <section id="d1"><h1></h1></section>
+            <section id="day1"></section>
+           </article>
+           <article id="third">
+              <section id="d2"><h1></h1></section>
+             <section id="day2"></section>
+           </article>
+           <article id="third">
+              <section id="d3"><h1></h1></section>
+             <section id="day3"></section>
+           </article>
+           <article id="fourth">
+              <section id="d4"><h1></h1></section>
+             <section id="day4"></section>
+           </article>
+           <article id="fifth">
+              <section id="d5"><h1></h1></section>
+             <section id="day5"></section>
+           </article>
+
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="java.js"></script>
+</body>
+
+</html>
